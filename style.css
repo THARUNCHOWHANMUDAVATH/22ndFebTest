@@ -19,3 +19,52 @@ p {
     line-height: 1.6;
     text-align: justify;
 }
+
+/* 3rd Question*/
+.card {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+/* 4th Question*/
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/*5th Question*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 6th Question*/
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: darkblue;
+}
