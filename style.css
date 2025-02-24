@@ -85,3 +85,146 @@ nav {
     background-color: darkblue;
     transform: scale(1.2);
 }
+/* 8 th question */
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: relative;
+    animation: slide 2s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 300px;
+    }
+}
+
+/* 9th question */
+.box1, .box2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    justify-content: center;
+}
+
+/* 10th question */
+:root {
+    --main-color: lightblue;
+}
+header, main {
+    background-color: var(--main-color);
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    :root {
+        --main-color: lightcoral;
+    }
+}
+
+/* 11th question */
+.hero {
+    background-image: url(https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+.hero h1 {
+    font-size: 3rem;
+}
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px;
+    }
+}
+
+/* 12 th question */
+h1 {
+    font-size: 4rem;
+}
+p {
+    font-size: 1.2rem;
+}
+@media (max-width: 900px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* 13 th question */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+.gallery img:hover {
+    filter: grayscale(0%);
+}
+
+/* 14 th question */
+h1::selection, p::selection {
+    background-color: yellow;
+    color: red;
+}
+/* 15 th question */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 5px;
+}
